@@ -33,6 +33,7 @@ def sigmoid(inX):
 
 #graAscent函数实现了梯度上升法，隐含了复杂的数学推理
 #梯度上升算法，每次参数迭代时都需要遍历整个数据集
+'''
 def graAscent(dataMatrix,matLabel):
     m,n=shape(dataMatrix)
     matMatrix=mat(dataMatrix)
@@ -44,7 +45,7 @@ def graAscent(dataMatrix,matLabel):
         error=sigmoid(matMatrix*w)-matLabel
         w=w-alpha*matMatrix.transpose()*error
     return w
-
+'''
 
 #随机梯度上升算法的实现，对于数据量较多的情况下计算量小，但分类效果差
 #每次参数迭代时通过一个数据进行运算
